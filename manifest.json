@@ -1,21 +1,32 @@
 {
-    "name": "Tic Tac Toe",
-    "short_name": "Tic Tac Toe",
-    "description": "Progressive Web App",
-    "icons": [
-      {
-        "src": "img/logo-256.png",
-        "sizes": "256x256",
-        "type": "image/png"
+  "name":"github-user-finder",
+  "short_name":"github-user-finder",
+  "theme_color":"#4DBA87",
+  "icons":[
+    {
+      "src":"./img/android-chrome-256x256.png",
+      "sizes":"256x256",
+      "type":"image/png"
       },
       {
-        "src": "img/logo-512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ],
-    "start_url": "index.html",
-    "display": "fullscreen",
-    "theme_color": "#f2b137",
-    "background_color": "#f2b137"
+        "src":"./img/android-chrome-512x512.png",
+        "sizes":"512x512",
+        "type":"image/png"
+        },
+        {
+          "src":"./img/android-chrome-maskable-256x256.png",
+          "sizes":"256x256",
+          "type":"image/png",
+          "purpose":"maskable"
+        },
+          {
+            "src":"./img/android-chrome-maskable-512x512.png",
+            "sizes":"512x512",
+            "type":"image/png",
+            "purpose":"maskable"
+            }
+          ],
+            "start_url":".",
+            "display":"standalone",
+            "background_color":"#000000"
   }
