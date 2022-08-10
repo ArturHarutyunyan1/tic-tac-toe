@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ArturHarutyunyan1/tic-tac-toe/issues"
   },
-  "homepage": "https://github.com/ArturHarutyunyan1/tic-tac-toe#readme"
+  "homepage": "https://github.com/ArturHarutyunyan1/tic-tac-toe#readme",
+  "dependencies": {
+    "pwa": "^1.9.7"
+  }
 }
