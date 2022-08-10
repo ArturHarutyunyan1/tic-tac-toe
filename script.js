@@ -29,6 +29,14 @@ let o = 0
 let tie = 0
 
 
+window.onload = () => {
+    "use strict";
+  
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js");
+    }
+  };
+
 initGame()
 
 function initGame(){
