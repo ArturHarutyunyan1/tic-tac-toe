@@ -1,5 +1,5 @@
 let cacheName = "Tic Tac Toe";
-let filesToCache = ["/", "./index.html", "./style.css", "./script.js"];
+let filesToCache = ["/", "index.html", "style.css", "script.js"];
 
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", (e) => {
