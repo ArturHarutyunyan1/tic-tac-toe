@@ -5,26 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="./img/logo-256.png" />
+    <link rel="apple-touch-icon" href="./src/img/android-chrome-512x512.png" />
+    <link rel="shortcut icon" href="./src/img/android-chrome-512x512.png" type="image/png">
 </head>
 <body>
     <div class="container">
         <div class="space-btw">
             <div class="item status-bar">
-                <img src="./img/icon-x-silver.svg">
+                <img src="./src/img/icon-x-silver.svg">
                 <h3>TURN</h3>
             </div>
             <div class="item">
                 <button class="restart">
-                    <img src="./img/icon-restart.svg" alt="Restart">
+                    <img src="./src/img/icon-restart.svg" alt="Restart">
                 </button>
             </div>
         </div>
         <div class="game">
-            <div class="cell" data-cell="0">
-            </div>
+            <div class="cell" data-cell="0"></div>
             <div class="cell" data-cell="1"></div>
             <div class="cell" data-cell="2"></div>
             <div class="cell" data-cell="3"></div>
@@ -61,7 +61,13 @@
             <button class="continue">Continue</button>
         </div>
     </div>
-    <button class="installApp">install</button>
-    <script src="script.js"></script>
+    <div class="install-panel">
+        <div class="col">
+            <h2>Install Tic Tac Toe game to your home screen</h2>
+            <button class="installApp">Install</button>
+        </div>
+    </div>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/install.js"></script>
 </body>
 </html>
