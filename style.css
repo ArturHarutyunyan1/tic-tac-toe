@@ -86,8 +86,9 @@ body{
 }
 
 .row{
-    width: 500px;
+    width: 440px;
     height: auto;
+    margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
