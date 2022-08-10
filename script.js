@@ -37,6 +37,50 @@ window.onload = () => {
     }
   };
 
+  installPWA(installPromptEventPayload) {
+
+    var installPromptEvent = installPromptEventPayload.getInstallPromptEvent();
+    
+    if (installPromptEvent) {
+    
+    // Call prompt() to display the official prompt
+    
+    installPromptEvent.prompt().catch(function () {
+    
+    // In case of DOMException, ask again
+    
+    return false;
+    
+    });
+    
+    // Wait for the user to respond to the prompt
+    
+    return installPromptEvent.userChoice.then(function (choiceResult) {
+    
+    if (choiceResult.outcome === 'accepted') {
+    
+    console.log('user accepted ');
+    
+    } else {
+    
+    console.log('user cancelled ');
+    
+    }
+    
+     
+    
+    // Don't ask the user again
+    
+    return true;
+    
+    });
+    
+    }
+    
+    return Promise.resolve(false);
+    
+    }
+
 initGame()
 
 function initGame(){

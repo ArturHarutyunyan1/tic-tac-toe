@@ -1,8 +1,13 @@
 {
-  "name":"Tic Tac Toe",
   "short_name":"Tic Tac Toe",
+  "name":"Tic Tac Toe",
   "theme_color":"#4DBA87",
   "icons":[
+    {
+      "src": "./img/android-chrome-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
     {
       "src":"./img/android-chrome-256x256.png",
       "sizes":"256x256",
@@ -12,6 +17,12 @@
         "src":"./img/android-chrome-512x512.png",
         "sizes":"512x512",
         "type":"image/png"
+        },
+        {
+          "src": "./img/android-chrome-maskable-144x144.png",
+          "sizes": "144x144",
+          "type": "image/png",
+          "purpose": "maskable"
         },
         {
           "src":"./img/android-chrome-maskable-256x256.png",
