@@ -1,0 +1,19 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe game ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturHarutyunyan1/tic-tac-toe.git"
+  },
+  "author": "Artur Harutyunyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArturHarutyunyan1/tic-tac-toe/issues"
+  },
+  "homepage": "https://github.com/ArturHarutyunyan1/tic-tac-toe#readme"
+}
