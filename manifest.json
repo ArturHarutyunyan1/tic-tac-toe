@@ -4,34 +4,34 @@
   "theme_color":"#f2b137",
   "icons":[
     {
-      "src": "./src/img/android-chrome-144x144.png",
+      "src": "./img/android-chrome-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src":"./src/img/android-chrome-256x256.png",
+      "src":"./img/android-chrome-256x256.png",
       "sizes":"256x256",
       "type":"image/png"
       },
       {
-        "src":"./src/img/android-chrome-512x512.png",
+        "src":"./img/android-chrome-512x512.png",
         "sizes":"512x512",
         "type":"image/png"
         },
         {
-          "src": "./src/img/android-chrome-maskable-144x144.png",
+          "src": "./img/android-chrome-maskable-144x144.png",
           "sizes": "144x144",
           "type": "image/png",
           "purpose": "maskable"
         },
         {
-          "src":"./src/img/android-chrome-maskable-256x256.png",
+          "src":"./img/android-chrome-maskable-256x256.png",
           "sizes":"256x256",
           "type":"image/png",
           "purpose":"maskable"
         },
           {
-            "src":"./src/img/android-chrome-maskable-512x512.png",
+            "src":"./img/android-chrome-maskable-512x512.png",
             "sizes":"512x512",
             "type":"image/png",
             "purpose":"maskable"

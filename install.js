@@ -1,7 +1,7 @@
 if('serviceWorker' in navigator){
     navigator.serviceWorker
     // give complete path of sw.js file
-    .register('https://arturharutyunyan1.github.io/tic-tac-toe/sw.js')
+    .register('https://tic-tac-toe-arturharutyunyan.vercel.app/sw.js')
     .then(() => console.log('Service Worker Registered'))
 }
 
@@ -22,6 +22,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
                 console.log('App is installing');
             }else{
                 console.log('User dismissed the prompt');
+                addBtn.style.display = 'none'
             }
             deferredPromt = null;
         })

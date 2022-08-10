@@ -188,34 +188,6 @@ body{
     cursor: pointer;
 }
 
-.install-panel{
-    position: fixed;
-    width: 100%;
-    padding: 1rem;
-    background: orange;
-    bottom: 0;
-    left: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.install-panel .col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.installApp{
-    width: 200px;
-    height: 50px;
-    background: var(--green);
-    margin: 15px 0;
-    border: none;
-    border-radius: 15px;
-}
-
 .active{
     z-index: 2;
     opacity: 1;
@@ -241,6 +213,31 @@ body{
         font-size: 20px;
     }
     .install-panel{
+        position: fixed;
+        width: 100%;
+        padding: 1rem;
+        background: orange;
+        bottom: 0;
+        left: 0;
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .install-panel .col{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .installApp{
+        width: 200px;
+        height: 50px;
+        background: var(--green);
+        margin: 15px 0;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
     }
 }
