@@ -1,7 +1,7 @@
 {
     "name": "Tic Tac Toe",
     "short_name": "Tic Tac Toe",
-    "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
+    "description": "Progressive Web App",
     "icons": [
       {
         "src": "img/logo-256.png",
