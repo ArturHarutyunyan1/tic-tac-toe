@@ -202,7 +202,7 @@ if(tieValue){
 if('serviceWorker' in navigator){
     navigator.serviceWorker
     // give complete path of sw.js file
-    .register('http://localhost/tic-tac-toe/sw.js')
+    .register('https://arturharutyunyan1.github.io/tic-tac-toe/sw.js')
     .then(() => console.log('Service Worker Registered'))
 }
 
