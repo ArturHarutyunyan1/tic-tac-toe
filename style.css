@@ -235,9 +235,6 @@ body{
     .message h1{
         font-size: 20px;
     }
-    .modal-body{
-        height: 50%;
-    }
 }
 
 @media (max-height: 500px){
