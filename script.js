@@ -1,3 +1,11 @@
+window.onload = () => {
+    "use strict"
+  
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js")
+    }
+}
+
 const cells        = document.querySelectorAll('.cell')
 const statusBar    = document.querySelector('.status-bar')
 const restartBtn   = document.querySelector('.restart')
@@ -9,6 +17,7 @@ const o_score      = document.querySelector('.o-score')
 const ties         = document.querySelector('.ties')
 const icons        = ['./img/icon-x.svg', './img/icon-o.svg']
 const turns        = ['./img/icon-x-silver.svg', './img/icon-o-silver.svg']
+const outlines     = ['./img/icon-x-outline.svg', './img/icon-o-outline.svg']
 
 const winConditions = [
     [0, 1, 2],
@@ -19,39 +28,53 @@ const winConditions = [
     [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6]
-];
+]
 
-let board = ['', '', '', '', '', '', '', '', '']
+let board         = ['', '', '', '', '', '', '', '', '']
 let currentPlayer = 'X'
-let isRunning = false
-let x = 0
-let o = 0
-let tie = 0
+let isRunning     = false
+let x             = 0
+let o             = 0
+let tie           = 0
+let marker        = document.createElement('img')
 
-
-window.onload = () => {
-    "use strict";
-  
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("./sw.js");
-    }
-  };
-
-  
 
 initGame()
 
 function initGame(){
     cells.forEach(cell => {
+        cell.addEventListener('mouseover', showMarker)
+        cell.addEventListener('mouseleave', removeMarker)
         cell.addEventListener('click', cellClick)
     })
 
     restartBtn.addEventListener('click', restartGame)
     modalBtn.addEventListener('click', hideModal)
 
-    
     isRunning = true
 
+}
+
+function showMarker(e){
+    let cell = e.currentTarget
+    let icon = cell.querySelector('.icon')
+
+    if(!cell.contains(icon)){
+        if(currentPlayer == 'X'){
+            marker.src = outlines[0]
+        }else if(currentPlayer == 'O'){
+            marker.src = outlines[1]
+        }
+        cell.append(marker)
+    }
+}
+
+function removeMarker(e){
+    let cell = e.currentTarget
+
+    if(cell.contains(marker)){
+        cell.removeChild(marker)
+    }
 }
 
 function cellClick(){
@@ -81,11 +104,10 @@ function cellClick(){
 
 function placeMarker(cell, index){
     board[index] = currentPlayer
-
     if(currentPlayer == 'X'){
-        cell.innerHTML = `<img src="${icons[0]}">`
+        cell.innerHTML = `<img class="icon" src="${icons[0]}">`
     }else if(currentPlayer == 'O'){
-        cell.innerHTML = `<img src="${icons[1]}">`
+        cell.innerHTML = `<img class="icon" src="${icons[1]}">`
     }
 }
 
