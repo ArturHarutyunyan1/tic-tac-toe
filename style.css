@@ -204,6 +204,7 @@ body{
     transform: scale(1);
 }
 
+
 @keyframes animate{
     from{
         transform: scale(0.1);
